@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap');
+
+video {
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(00, 00, 00, 0.3) !important;
+}
+
+.stage-cube-cont {
+  width: 50%;
+  //   height: 100%;
+  top: 0;
+  padding-top: 16%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+
+  .face {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  h2 {
+    color: #fff;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Silkscreen', cursive;
+  }
+}
+
+h1 {
+  font-family: 'Silkscreen', cursive;
+}
+.skills {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.icons2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.fa-html5 {
+  height: 70px;
+  display: inline-block;
+}
+.fa-css3 {
+  height: 70px;
+}
+.fa-react {
+  height: 70px;
+}
+.fa-square-js {
+  height: 70px;
+}
+.git {
+  height: 70px;
+  color: rgb(86, 9, 209);
+}
+.fa-node {
+  height: 70px;
+  color: rgb(11, 142, 4);
+}
+.fa-database {
+  height: 70px;
+  color: rgb(173, 27, 11);
+}
+.fa-aws {
+  height: 70px;
+  color: rgb(231, 160, 7);
+}
