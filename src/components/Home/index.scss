@@ -14,8 +14,9 @@
     font-size: 53px;
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-
+    left: -10px;
     font-weight: 400;
+    text-align: left;
 
     &::before {
       // content: '<h1>';

@@ -16,6 +16,27 @@
     width: 100%;
     background-color: rgba(00, 00, 00, 0.5);
   }
+  h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+  }
+  .flat-button {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 1000;
+    letter-spacing: 4px;
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #025803b2;
+    margin-top: 25px;
+    float: left;
+
+    &:hover {
+      background: #025803b2;
+      color: #fff;
+    }
+  }
 }
 .contact-form {
   width: 100%;

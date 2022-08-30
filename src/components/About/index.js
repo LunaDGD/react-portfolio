@@ -9,15 +9,11 @@ import {
   faAws,
 } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
-// import React, { useState } from 'react'
-// import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import sr from '../../../src/assets/images/sr.mp4'
 
 function About() {
-  // const [letterClass, setLetterClass] = useState('text-animate')
-
   return (
     <>
       <div className="container about-page">

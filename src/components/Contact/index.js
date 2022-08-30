@@ -1,31 +1,8 @@
-import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import sr from '../../../src/assets/images/sr.mp4'
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
-
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
-
   return (
     <>
       <div className="container contact-page">
@@ -34,9 +11,15 @@ const Contact = () => {
 
         <div className="text-zone">
           <h1>Contact Me</h1>
+          <h2>lunadgd@protonmail.com</h2>
 
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form
+              rel="noopener noreferrer"
+              target="_blank"
+              action="https://formsubmit.co/26023bc586dc1987d09be98eeb268bf8"
+              method="POST"
+            >
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -65,7 +48,9 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <button type="submit" className="flat-button" value="SEND">
+                    Submit
+                  </button>
                 </li>
               </ul>
             </form>
